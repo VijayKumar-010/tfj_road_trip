@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TFJ's Road Trip - Trip Details</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#header">Our Trip</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#places">Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Budget</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <header class="jumbotron" id="header">
+      <div class="container">
+        <p class="bible-verse">
+          "The LORD will watch over your coming and going both now and
+          forevermore." - Psalm 121:8
+        </p>
+        <div class="title text-center">
+          <h1 class="title-line">TFJ's Road Trip</h1>
+        </div>
+      </div>
+    </header>
+
+    <section id="places" class="container-fluid bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="journey-description">
+            Embark on an unforgettable journey of
+            <span class="highlight">3000</span> kilometers!
+          </p>
+        </div>
+
+        <h2 class="text-center mb-5">Places We Are Visiting</h2>
+
+        <!-- Desktop Layout: Horizontal List -->
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 text-center mb-4">
+            <div class="place-item">
+              <p>Vijayawada to</p>
+              <h2>Wayanad</h2>
+              <p>Distance: 400 km</p>
+              <p>Estimated Time: 8 hours</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center mb-4">
+            <div class="place-item">
+              <p>Wayanad to</p>
+              <h2>Ooty</h2>
+              <p>Distance: 200 km</p>
+              <p>Estimated Time: 5 hours</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center mb-4">
+            <div class="place-item">
+              <p>Ooty to</p>
+              <h2>Mysore</h2>
+              <p>Distance: 150 km</p>
+              <p>Estimated Time: 3.5 hours</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center mb-4">
+            <div class="place-item">
+              <p>Mysore to</p>
+              <h2>Coorg</h2>
+              <p>Distance: 120 km</p>
+              <p>Estimated Time: 3 hours</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center mb-6">
+            <div class="place-item">
+              <p>Coorg to</p>
+              <h2>Vijayawada</h2>
+              <p>Distance: 550 km</p>
+              <p>Estimated Time: 10 hours</p>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="container-fluid bg-light py-5">
+      <div class="container">
+        <div
+          id="day-1"
+          class="day-section"
+          style="background-image: url('assets/images/vijayawada.jpg')"
+        >
+          <div class="overlay">
+            <h2>Day-1 : Vijayawada</h2>
+            <h4>Starting from Vijayawada, our journey to Wayanad unfolds with scenic vistas and cultural encounters, promising an enriching experience filled with natural beauty and local charm</h4>
+          </div>
+        </div>
+
+        <!-- Repeat similar structure for each day -->
+        <div
+          id="day-2"
+          class="day-section"
+          style="background-image: url('assets/images/wayanad.jpg')"
+        >
+        <div class="overlay">
+          <h2>Day 2:Wayanad</h2>
+          <h4>Venturing from Wayanad to the scenic landscapes of Ooty.</h4>
+          <div class="buttons">
+            <button class="btn btn-primary" onclick="toggleInfo('places-2')">
+              Places We Are Visiting
+            </button>
+            <button class="btn btn-secondary" onclick="toggleInfo('accommodation-2')">
+              Accommodation
+            </button>
+          </div>
+        
+          <div id="places-2" class="info hidden">
+            <div id="places-carousel-2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Place 1: Some Place</h5>
+                      <br class="card-text">Description or highlights of the place...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Place 2: Another Place</h5>
+                      <p class="card-text">Description or highlights of another place...</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+              </div>
+              <a class="carousel-control-prev" href="#places-carousel-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#places-carousel-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+                
+          <div id="accommodation-2" class="info hidden">
+            <h3>Accommodation</h3>
+            <p>Details about the accommodation...</p>
+          </div>
+        </div>
+        </div>
+        <!-- Add similar sections for other days -->
+         <!-- Repeat similar structure for each day -->
+        <div
+        id="day-3"
+        class="day-section"
+        style="background-image: url('assets/images/ooty.jpg')"
+      >
+        <div class="overlay">
+          <h2>Day 3:Ooty</h2>
+          <h4>Leaving the lush landscapes of Ooty, we head towards the historic charm of Mysore.</h4>
+          <div class="buttons">
+            <button class="btn btn-primary" onclick="toggleInfo('places-3')">
+              Places We Are Visiting
+            </button>
+            <button class="btn btn-secondary" onclick="toggleInfo('accommodation-3')">
+              Accommodation
+            </button>
+          </div>
+        
+          <div id="places-3" class="info hidden">
+            <div id="places-carousel-3" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Place 1: Some Place</h5>
+                      <br class="card-text">Description or highlights of the place...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Place 2: Another Place</h5>
+                      <p class="card-text">Description or highlights of another place...</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+              </div>
+              <a class="carousel-control-prev" href="#places-carousel-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#places-carousel-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+      
+        <div id="accommodation-3" class="info hidden">
+          <h3>Accommodation</h3>
+          <p>Details about the accommodation...</p>
+        </div>
+      </div>
+      </div>
+      <!-- Repeat similar structure for each day -->
+      <div
+      id="day-4"
+      class="day-section"
+      style="background-image: url('assets/images/mysuru.jpg')"
+    >
+    <div class="overlay">
+      <h2>Day 4:Mysour</h2>
+      <h4>Journeying from the regal city of Mysore to the lush greenery of Coorg</h4>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="toggleInfo('places-4')">
+          Places We Are Visiting
+        </button>
+        <button class="btn btn-secondary" onclick="toggleInfo('accommodation-4')">
+          Accommodation
+        </button>
+      </div>
+    
+      <div id="places-4" class="info hidden">
+        <div id="places-carousel-4" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Place 1: Some Place</h5>
+                  <br class="card-text">Description or highlights of the place...</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Place 2: Another Place</h5>
+                  <p class="card-text">Description or highlights of another place...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <a class="carousel-control-prev" href="#places-carousel-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#places-carousel-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    
+      <div id="accommodation-4" class="info hidden">
+        <h3>Accommodation</h3>
+        <p>Details about the accommodation...</p>
+      </div>
+    </div>
+      </div>
+      <!-- Repeat similar structure for each day -->
+      <div
+      id="day-5"
+      class="day-section"
+      style="background-image: url('assets/images/coorg.jpg')"
+    >
+    <div class="overlay">
+      <h2>Day 5:Coorg</h2>
+      <h4>Heading back to Vijayawada from the serene landscapes of Coorg.</h4>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="toggleInfo('places-5')">
+          Places We Are Visiting
+        </button>
+      </div>
+    
+      <div id="places-5" class="info hidden">
+        <div id="places-carousel-5" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Place 1: Some Place</h5>
+                  <br class="card-text">Description or highlights of the place...</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Place 2: Another Place</h5>
+                  <p class="card-text">Description or highlights of another place...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <a class="carousel-control-prev" href="#places-carousel-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#places-carousel-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container my-5">
+      <h2 class="text-center mb-5">Budget</h2>
+      <p class="text-center mb-5">Complete Budget will come here </p>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-light">
+      <p>&copy; 2024 Our Trip. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

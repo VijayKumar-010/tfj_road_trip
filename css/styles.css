@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 70px; /* Increased padding-top for better spacing with fixed navbar */
+}
+
+header.jumbotron {
+  background: url("../assets/images/background.jpeg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header.jumbotron .bible-verse {
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: center;
+}
+
+header.jumbotron .title {
+  text-align: center;
+}
+
+header.jumbotron .title-line {
+  font-size: 3em; /* Adjusted font size for better visibility */
+  font-weight: bold;
+}
+
+/* Update the font size and font family for the journey description */
+.journey-description {
+  font-size: 2em; /* Increased font size */
+  font-family: "Arial", sans-serif; /* Changed font family */
+  margin-bottom: 30px; /* Adjusted margin for spacing */
+  animation: fadeInUp 1s ease; /* Animation for fade in effect */
+}
+.highlight {
+  font-size: 4em;
+  color: #f39c12; /* Custom color for highlight */
+}
+
+/* Define the animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  padding: 60px 0;
+}
+
+.place-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-item h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.place-item p {
+  margin-bottom: 5px;
+}
+
+.day-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.day-section .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.day-section h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.day-section .buttons {
+  margin-bottom: 20px;
+}
+
+.day-section .btn {
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
